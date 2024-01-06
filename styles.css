@@ -489,3 +489,57 @@ html {
     line-height: normal;
     margin-left: 15px;
 }
+
+.project-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.projectNav {
+    border-bottom: 1px solid #2A2937;
+    padding-bottom: 10px;
+}
+
+.navHome {
+    text-decoration: none;
+    color: #2A2937;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.project-title {
+    color: #2A2937;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ytb-videolink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.video {
+    align-items: center;
+    justify-content: center;
+}
+
+.project-subtitle {
+    color: #2A2937;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
