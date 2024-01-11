@@ -542,4 +542,50 @@ html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 40px;
+}
+
+.img-wrapper {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 90px;
+}
+
+.img-wrapper a {
+    display: flex;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.img-wrapper :hover .visit-website {
+    visibility: visible;
+
+}
+
+.travelplan-photo {
+    max-width: 837px;
+    width: 100%;
+    height: auto;
+}
+
+.visit-website {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50px);
+}
+
+.project-text {
+    color: #2A2937;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 50px;
 }
