@@ -589,3 +589,11 @@ html {
     line-height: normal;
     margin-bottom: 50px;
 }
+
+.footer {
+    margin-top: 100px;
+    width: calc(100% - 281px);
+    margin-left: 193px;
+    margin-right: 88px;
+    padding-bottom: 10px;
+}
