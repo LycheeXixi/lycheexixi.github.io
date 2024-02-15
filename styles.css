@@ -184,7 +184,8 @@ html {
 }
 
 .des-button :hover {
-    width: 150%;
+    width: 220px;
+    height: 52px;
 }
 
 .skills-bar {
