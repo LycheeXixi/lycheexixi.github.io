@@ -9,10 +9,10 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <nav class="projectNav">
+        <a href="index.html" class="navHome">&lt; Home</a>
+    </nav>
     <div class="project-container">
-        <nav class="projectNav">
-            <a href="index.html" class="navHome">&lt; Home</a>
-        </nav>
         <div class="project-title">
             SignABC
         </div>
@@ -21,14 +21,85 @@
             Brief:
         </div>
         <div class="project-text">
-            
+            This project is a website to help hearing impaired children learn fingerspelling. In this website, users can learn how to fingerspell each letter of the alphabet, as well as taking quizzes on the fingerspelling they have already learnt and they can even customise the words in their word books. The user can take pictures of the gestures through their computer cameras and the system will recognise if the finger spellings are correct. In this project, we have used convolutional neural network techniques to accomplish image based static gesture recognition.
         </div>
+        <div class="project-subtitle">
+            Deafness and fingerspelling:
+        </div>
+        <div class="project-text">
+            Deafness is not an uncommon condition worldwide. According to data published by the World Health Organisation (World Health Organization, 2022), approximately 700 million people worldwide currently suffer from hearing loss, of which 34 million are children with hearing loss.
+        </div>
+        <div class="project-text">
+            Hearing loss can have a serious negative impact on a person. Not only can hearing loss make life difficult, but it can also lead to social isolation and loneliness, as hearing loss often makes communication difficult (Patel et al., 2021). Furthermore, hearing impairment in children is often accompanied by a loss of access to education on the same level as normal children (LeClair & Saunders, 2019).
+        </div>
+        <div class="project-text">
+            A common form of communication for deaf people is sign language, and fingerspelling is an important component in the linguistic system of sign language. Finger spelling is the process of spelling words using hand shapes that correspond to the letters of the word, and American Sign Language uses the American Sign Language sign language alphabet. Fingerspelling is used for a wide range of purposes and is often used to spell names of people, places or other special words (American sign language, no date). In addition, studies have shown that learning fingerspelling can improve the reading and literacy skills of deaf people (Stone et al., 2015).
+        </div>
+        <div class="project-subtitle">
+            Target User:
+        </div>
+        <div class="project-text">
+            Based on the above research, we can see that helping children with hearing impairment learn fingerspelling at an early age has many benefits, such as helping them to spell more words, enhancing their communication skills and improving their reading skills. In the society where there is a large base of hearing impaired people, helping them to learn fingerspelling can in some way address some of the difficulties of hearing impaired people. In addition, if family members or friends of the hearing impaired people are interested, they can also learn to fingerspell so that they can communicate with their hearing impaired family. It is also worth noting that hearing impaired children with hearing impaired parents are not our target users because they often learn fingerspelling naturally.
+        </div>
+        <div class="project-subtitle">
+            The Design:
+        </div>
+        <div class="project-text">
+            We proposed a language learning website for young children. The main functions are: learn, challenge, wordbook and record. The learning section contains an image of all the 26 alphabets in ASL, as well an exercise feature that allows the user to practise fingerspelling. The user will be given a random word that they need to fingerspell, and when they are ready they need to click the button so that their camera will start to capture the hand shapes they made. if their similarity is satisfactory they will be able to continue to the next word, if not they will have to redo the hand shapes. For the challenge, similarly, the user will be given a word to fingerspell and evaluated based on the performance. However, in this session, they will receive a mark instead of simply “pass or fail”. The system will keep a record on their highest mark. The words that they will be given come from the wordbook. The wordbook is preset by us, but the user can customise it by removing existing words or adding their own words.
+        </div>
+        <div class="project-text">
+            Here is a simple prototype we created:
+        </div>
+        <div class="abc-img">
+            <img src="portfolio icons/Wordbook.jpg" alt="" style="max-width: 500px; height: auto; margin-right: 20px;">
+            <img src="portfolio icons/Learn.jpg" alt="" style="max-width: 500px; height: auto;">
+        </div>
+        <div class="abc-img">
+            <img src="portfolio icons/Practice Mode.jpg" alt="" style="max-width: 500px; height: auto; margin-right: 20px;">
+            <img src="portfolio icons/Challenge Grade.jpg" alt="" style="max-width: 500px; height: auto;">
+        </div>
+        <br>
         <div class="project-subtitle">
             Technical Implementation:
         </div>
         <div class="project-text">
-            
+            In terms of technology, much of the literature and existing research has shown that convolutional neural networks can accurately recognise and classify images, and are also very widely used. Therefore, we decided to use convolutional neural networks and a machine learning library for ASL fingerspelling for this project, as this technique is both mature and efficient.
+        </div>
+        <div class="project-text">
+            In terms of technical implementation, we started by creating a Marcelle project and, according to the API provided by Marcelle, we had two options for the layout of the entire interface: Dashboard and Wizard. Based on the needs of our project, which was to help hearing impaired children to learn fingerspelling, we chose the Wizard interface layout as it would better guide the children and their guardians learn how to use this website. When creating the interface layout, we use the wizard() function in the API to select the Wizard interface layout, followed by the .page() function to create the page and the .use() function to add the components. 
+        </div>
+        <div class="project-text">
+            We next performed the pre-training model building. As we were implementing sign language recognition, we chose to use the Kera model from TensorFlow for the training of the convolutional neural network model. After training, we converted the Keras model into a model that could be run in tensorflow.js. In the index.js file, we used tfjsModel for the import and use of the model. We then perform real-time recognition of gestures based on the video stream from the webcam.
+        </div>
+        <div class="project-subtitle">
+            My contribution to this project:
+        </div>
+        <div class="project-text">
+            User Experience (UX) Design, User Interface (UI) Design, Frontend Programming, Experimental Design.
+        </div>
+        <div class="project-subtitle">
+            Reference:
+        </div>
+        <div class="project-text">
+            American sign language Fingerspelling &amp; Numbers: Introduction (no date) American Sign Language (ASL). Available at: https://www.lifeprint.com/asl101/fingerspelling/fingerspelling.htm (Accessed: February 1, 2023).
+        </div>
+        <div class="project-text">
+            Deafness and hearing loss (2022) World Health Organization. World Health Organization. Available at: https://www.who.int/health-topics/hearing-loss#tab=tab_1 (Accessed: February 1, 2023). 
+        </div>
+        <div class="project-text">
+            LeClair, K.L. and Saunders, J.E., 2019. Meeting the educational needs of children with hearing loss. Bulletin of the World Health Organization, 97(10), p.722
+        </div>
+        <div class="project-text">
+            Patel, S.R., Bouldin, E., Tey, C.S., Govil, N. and Alfonso, K.P., 2021. Social Isolation and Loneliness in the Hearing‐Impaired Pediatric Population: A Scoping Review. The Laryngoscope, 131(8), pp.1869-1875.
+        </div>
+        <div class="project-text">
+            Stone, A., Kartheiser, G., Hauser, P.C., Petitto, L.A. and Allen, T.E., 2015. Fingerspelling as a novel gateway into reading fluency in deaf bilinguals. PloS one, 10(10), p.e0139610.
         </div>
     </div>
 </body>
+<footer>
+    <div class="footer">
+        <div></div>
+    </div>
+</footer>
 </html>
