@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fabrication</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="projectNav">
+        <a href="index.html" class="navHome">&lt; Home</a>
+    </nav>
+    <div class="project-container">
+        <div class="project-title">
+            Digital Fabrication
+        </div>
+        <div class="img-wrapper">
+            <a href="https://lycheexixi.gitlab.io/digital-fabrication/index.html">
+                <img src="portfolio icons/fabrication.png" alt="travelplan-photo" class="travelplan-photo">
+                <span class="visit-website">Visit Website</span>
+                <div class="overlay"></div>
+            </a>
+        </div>
+        <div class="project-subtitle">
+            Brief:
+        </div>
+        <div class="project-text">
+            This travel planner platform is designed to make trip planning more flexible for users. It allows users to search for destinations, receive destination or attraction recommendations, filter attractions by the purpose of their trip such as shopping, food, nature or history, create travel plans with existing templates, automatically add itineraries to their plan, freely add and remove the contents of the travel plan, as well as exporting the plan to share it with others.
+        </div>
+        <div class="project-subtitle">
+            User Group:
+        </div>
+        <div class="project-text">
+            The majority of the user group is young people(from 18-32 years old) , including students, young office workers, and travel enthusiasts. They are interested in citywalk, online shopping and fine dining. They have their unique taste when using digital products or services such as bright color, minimalist design, or remarkable features. 
+        </div>
+        <div class="project-subtitle">
+            Dynamic functionalities:
+        </div>
+        <div class="project-text">
+            <strong>Searching for destinations with filters:</strong>
+The search function consists of an input box as the search bar and an interactive map that shows the exact locations of the search results. This interactive map is generated using the mapbox API and uses longitude, latitude and zoom to position the map to Helsinki. The implementation of the search box incorporates the mapbox API and the Google Places API. First, the search keywords entered by the user are transferred as data to the Google Places API, which then returns the search results. Then, in order to display data such as the exact location of the search results and the name of the results on the map, we converted the format of the data returned by the Google Place API into a data format suitable for the mapbox API in order to locate the location of these search results using latitude and longitude, as well as display the name of the results on the map.
+
+        </div>
+        <div class="project-text">
+            <strong>Editing plans: </strong>
+            We made a separate page so that users can freely edit their plans within their own accounts, which means adding and removing items to and from their plans. Those features are implemented based on the Firebase Firestore database. Firstly, we created a collection named users under the root db to store all the users' data. Then, we retrieved the unique uid that each user got when they signed up and named the documents in the users collection with this uid to distinguish the data in different user accounts. 
+            Under the document named after the user's unique uid, we set up a sub-collection named places. In the places subcollection, one or multiple plans named by the users themselves are stored. In each individual plan, each location stored by the user is saved in a field called dataArray in each plan's document.            
+        </div>
+        <div class="project-text">
+            <strong>Exporting PDFs: </strong>
+            We have implemented the function of exporting plans as pdf in the plan editing page. Users can select the plans they want to export and then press the "Export as pdf" button to export the plans. In order to achieve this , we use the jsPDF Library, and then adjust the style of the pdf documents, in order to be suitable for printing and reading.
+        </div>
+        <div class="project-subtitle">
+            Technical Implementation:
+        </div>
+        <div class="project-text">
+            React.js framework for the frontend, Firebase web services as the backend and Firebase Firestore as the database.
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div></div>
+    </div>
+</footer>
+</html>
