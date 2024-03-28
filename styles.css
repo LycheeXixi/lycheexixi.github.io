@@ -849,7 +849,7 @@ html {
     .projects-block {
         width: 250px;
         height: auto;
-        max-height: 240px;
+        aspect-ratio: 1.375;
     }
 
     .project img {
